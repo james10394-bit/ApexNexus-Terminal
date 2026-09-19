@@ -1,4 +1,4 @@
-# ApexNexus Terminal v2.0.0
+# ApexNexus Terminal v2.0.1
 
 ApexNexus Terminal 是可直接部署到 GitHub Pages 的純前端交易研究與紀律管理工具。
 
@@ -52,7 +52,7 @@ date,open,high,low,close,volume
 
 ## 即時資料架構
 
-目前 v2.0.0 是 GitHub Pages 純前端版本，因此不把券商 API Key 或付費資料金鑰直接寫在瀏覽器。
+目前 v2.0.1 是 GitHub Pages 純前端版本，因此不把券商 API Key 或付費資料金鑰直接寫在瀏覽器。
 
 如需即時行情，建議下一階段採：
 
@@ -63,3 +63,13 @@ GitHub Pages 前端 → Cloudflare Worker / Vercel Function → TWSE / TPEx / �
 ## 免責聲明
 
 本工具僅供研究、策略測試與交易紀律管理，不構成投資建議。回測績效不代表未來績效。
+
+
+## v2.0.1 更新
+- 觀察清單防重複：同一市場＋同一代號只保留一筆。
+- 股票代號標準化：英文自動轉大寫，台股可將 `.TW` / `.TWO` 正規化。
+- 既有重複資料啟動時自動去重。
+- JSON 備份匯入時自動去重。
+- 儀表板與交易點子清單新增單筆刪除。
+- 清空觀察清單新增確認提示。
+- 更新 Service Worker 快取策略，減少 GitHub Pages 顯示舊版本的情況。
