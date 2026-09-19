@@ -1,0 +1,9 @@
+{
+  "name":"ApexNexus Terminal",
+  "short_name":"ApexNexus",
+  "start_url":"./",
+  "display":"standalone",
+  "background_color":"#07111f",
+  "theme_color":"#07111f",
+  "description":"Trading intelligence, quant analysis and risk management terminal"
+}
